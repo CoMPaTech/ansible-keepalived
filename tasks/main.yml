@@ -1,5 +1,6 @@
 ---
 # This role installs and sets up keepalived
+become: true
 
 - name: Install keepalived (Centos)
   yum: name=keepalived state=present
